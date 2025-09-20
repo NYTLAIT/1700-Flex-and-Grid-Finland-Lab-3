@@ -9,6 +9,7 @@
 
     width: 800px;
     height: 600px;
+    margin: 1rem;
 
     font-family: Helvetica;
 }
@@ -18,16 +19,19 @@
     flex-direction: column;
 
     background-size: cover;
-
     color: white;
+    padding: 1rem;
 }
 
 .grid-cell h2 {
-    margin: 1rem;
+    margin: 0;
+    font-size: 1.3rem;
 }
 
 .grid-cell p {
-    margin: 1rem;
+    margin: 0;
+    font-weight: lighter;
+    font-size: 0.9rem;
 }
 
 .title {
@@ -50,11 +54,17 @@
 .welcome {
     grid-area: c;
     background-image: url('images/finland-2.jpg');
+
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .gdp {
     grid-area: d;
     background-image: url('images/finland-3.jpg');
+
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .code {
@@ -65,9 +75,38 @@
 .govt {
     grid-area: f;
     background-image: url('images/finland-1.jpg');
+
+    justify-content: flex-end;
 }
 
 .news {
     grid-area: g;
     background-image: url('images/finland-5.jpg');
+}
+
+.news label, input, button {
+    margin: 0.1rem 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.9rem;
+    height: 1.1rem;
+}
+
+.news input, button {
+    font-size: 0.6rem;
+}
+
+.news input {
+    color: grey;
+    border: none;
+    margin-bottom: 0.4rem;
+}
+
+.news h2 {
+    margin-bottom: 0.6rem;
+}
+
+.news button {
+    width: fit-content;
+    align-self: flex-end;
 }
